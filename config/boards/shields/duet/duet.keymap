@@ -32,6 +32,10 @@
     };
 };
 
+&encoder {
+    status = "okay";
+};
+
 / {
     behaviors {
         hm: homerow_mods {
@@ -61,7 +65,7 @@
     &kp TAB    &hm LCTL A   &hm LGUI R   &hm LALT S  &hs LSHIFT T  &kp G                                       &kp M         &hs RSHIFT N &hm RALT E    &hm RGUI I  &hm RCTL O  &kp SQT
     &kp LSHIFT &kp Z        &kp X        &kp C       &kp D         &kp V                                       &kp K         &kp H        &kp COMMA     &kp DOT     &kp FSLH    &kp RCTRL
                                                      &kp DEL       &lt NAV RET  &lt FUNC TAB  &lt MEDIA BSPC   &lt SYM SPACE &kp SQT
-               &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none                                                                              &none  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END
+               &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none                                                                              &none
 
             >;
         };
@@ -72,7 +76,7 @@
     &trans     &kp HOME     &kp LEFT     &kp DOWN    &kp RIGHT     &kp END                                     &kp FSLH      &kp N4       &kp N5        &kp N6      &kp PLUS    &trans
     &trans     &trans       &trans       &trans      &trans        &trans                                      &kp EQUAL     &kp N1       &kp N2        &kp N3      &kp N0      &trans
                                                      &trans        &trans       &kp TAB       &kp BSPC         &kp SPACE     &kp DOT
-               &trans  &trans  &trans  &trans  &trans                                                                                           &trans  &trans  &trans  &trans  &trans
+               &trans  &trans  &trans  &trans  &trans                                                                                           &trans
             >;
         };
 
@@ -82,7 +86,7 @@
     &trans     &kp MINUS    &kp LBKT     &kp LBRC        &kp LPAR         &kp LT                                      &kp GT        &kp RPAR          &kp RBRC      &kp RBKT    &kp PLUS    &trans
     &trans     &kp CAPS     &kp GRAVE    &kp LC(LS(TAB)) &kp LC(LG(LEFT)) &caps_word                                  &trans        &kp LC(LG(RIGHT)) &kp LC(TAB)   &trans      &kp BSLH    &trans
                                                          &trans           &kp RET       &kp DEL        &kp BSPC       &trans        &trans
-               &trans  &trans  &trans  &trans  &trans                                                                                           &trans  &trans  &trans  &trans  &trans
+               &trans  &trans  &trans  &trans  &trans                                                                                           &trans
 
             >;
         };
@@ -93,7 +97,7 @@
     &trans     &kp LS(HOME) &kp LS(LEFT)  &kp LS(DOWN) &kp LS(RIGHT) &kp LS(END)                                 &kp K_VOL_UP     &kp F4       &kp F5        &kp F6      &kp F11     &trans
     &trans     &trans       &trans        &trans       &trans        &kp C_MUTE                                  &kp K_VOL_DN     &kp F1       &kp F2        &kp F3      &kp F12     &trans
                                                        &trans        &trans        &trans       &trans           &kp SPACE        &trans
-               &trans  &trans  &trans  &trans  &trans                                                                                           &trans  &trans  &trans  &trans  &trans
+               &trans  &trans  &trans  &trans  &trans                                                                                           &trans
             >;
         };
 
@@ -103,7 +107,7 @@
     &trans     &trans       &trans        &trans       &trans        &trans                                     &bt BT_CLR         &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2   &bt BT_SEL 3    &trans
     &trans     &trans       &trans        &trans       &trans        &trans                                     &trans             &ext_power EP_ON  &ext_power EP_OFF  &out OUT_USB   &out OUT_BLE    &trans
                                                        &trans        &trans        &trans        &trans         &trans             &trans
-               &trans  &trans  &trans  &trans  &trans                                                                                           &trans  &trans  &trans  &trans  &trans
+               &trans  &trans  &trans  &trans  &trans                                                                                           &trans
             >;
         };
 
@@ -113,7 +117,7 @@
     &trans     &trans       &kp LG(LEFT) &kp LG(DOWN) &kp LG(RIGHT) &trans                                      &trans      &trans      &trans      &trans      &trans      &trans
     &trans     &trans       &trans       &trans       &trans        &trans                                      &trans      &trans      &trans      &trans      &trans      &trans
                                                       &trans        &trans        &trans         &trans         &trans      &trans
-               &trans  &trans  &trans  &trans  &trans                                                                                           &trans  &trans  &trans  &trans  &trans
+               &trans  &trans  &trans  &trans  &trans                                                                                           &trans
             >;
         };
     };
